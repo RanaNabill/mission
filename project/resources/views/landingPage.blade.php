@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <title>Landing Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +17,9 @@
         body {
             font-family: 'Noto Kufi Arabic', sans-serif;
 
+
         }
+
     </style>
 
 </head>
@@ -42,8 +47,8 @@
                 </button>
                 <div class="mx-auto">
 
-                    <ul
-                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700" style="margin-top: 10%" dir="rtl">
+                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700"
+                        style="margin-top: 10%" dir="rtl">
                         <li>
                             <a href="#"
                                 class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
@@ -105,8 +110,8 @@
                 <h1 class="text-3xl font-extrabold sm:text-5xl">
 
                     <span class="dark:text-white" style="margin-right:5%;line-height:120% ">
-                     <span style="margin-right: -5%">أهلا بكم في</span><br>
-                      <span style="color:#d5a419">حفائر</span><br>
+                        <span style="margin-right: -5%">أهلا بكم في</span><br>
+                        <span style="color:#d5a419">حفائر</span><br>
                         المجلس الأعلى <br>للآثار</span>
                 </h1>
 
@@ -120,7 +125,7 @@
         </div>
     </section>
     <div class="relative flex py-5 items-center" style="margin-top: 5%">
-        <div class="flex-grow border-t border-gray-400" style="margin-left:20%" ></div>
+        <div class="flex-grow border-t border-gray-400" style="margin-left:20%"></div>
         <span class="flex-shrink mx-4 text-gray-400">أخر الأخبار</span>
         <div class="flex-grow border-t border-gray-400"style="margin-right: 20%"></div>
     </div>
@@ -216,378 +221,406 @@
             </svg>
         </button>
     </div>
-    <div class="my-100 h-0.5 border-t-2 border-yellow-500" style="margin-top:10%; margin-right:10%; margin-left:10%; margin-bottom:5%""> </div>
+    <div class="my-100 h-0.5 border-t-2 border-yellow-500"
+        style="margin-top:10%; margin-right:10%; margin-left:10%; margin-bottom:5%""> </div>
 
-        <section class="bg-white" style=" margin-right: 7%; margin-left:7%;">
+    <section class="bg-white" style=" margin-right: 7%; margin-left:7%;">
 
-          <!-- start of map image -->
-             <div class="container px-6 py-10 mx-auto">
-             <div class="mt-9 lg:-mx-6 lg:flex lg:items-center" style="margin-top:-15%">
-                 <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" style="margin-left:10%; width: 40%; height:40%;" src="{{ asset('img/Map.png') }}"alt="">
-         <!-- End of map image -->
-         <!-- start of statement اكتشف خريطة اشهر مواقع حفائر المجلس الاعلي للاثار -->
+        <!-- start of map image -->
+        <div class="container px-6 py-10 mx-auto">
+            <div class="mt-9 lg:-mx-6 lg:flex lg:items-center" style="margin-top:-15%">
+                <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96"
+                    style="margin-left:10%; width: 40%; height:40%;" src="{{ asset('img/Map.png') }}"alt="">
+                <!-- End of map image -->
+                <!-- start of statement اكتشف خريطة اشهر مواقع حفائر المجلس الاعلي للاثار -->
 
-         <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8" dir="rtl">
-           <div class="relative flex items-center justify-center lg:justify-start lg:w-1/20">
-             <img src="{{ asset('img/ain.png') }}" alt="ain image" width="600" height="400">
-             <div class="absolute inset-0 flex flex-col items-center justify-center " >
-               <h1 class="text-3xl font-extrabold sm:text-5xl" dir="rtl"style="font-size:250%; line-height:120%" >
-                 <span><span style="color:#d5a419">أكتشف</span> خريطة<br>أشهر مواقع <span style="color:#d5a419">حفائر</span><br>المجلس الأعلى<br>للآثار!</span>
-               </h1>
-               <a class="inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75 mt-8" href="/download">
-                 <span class="block rounded-full bg-white px-8 py-3 text-sm font-medium hover:bg-transparent">
-                   اكتشف المزيد
-                 </span>
-               </a>
-             </div>
-           </div>
-         </div>
-          <!-- start of statement اكتشف خريطة اشهر مواقع حفائر المجلس الاعلي للاثار -->
-                 </div>
-             </div>
-         </section>
+                <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
+                    dir="rtl">
+                    <div class="relative flex items-center justify-center lg:justify-start lg:w-1/20">
+                        <img src="{{ asset('img/ain.png') }}" alt="ain image" width="600" height="400">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center ">
+                            <h1 class="text-3xl font-extrabold sm:text-5xl"
+                                dir="rtl"style="font-size:250%; line-height:120%">
+                                <span><span style="color:#d5a419">أكتشف</span> خريطة<br>أشهر مواقع <span
+                                        style="color:#d5a419">حفائر</span><br>المجلس الأعلى<br>للآثار!</span>
+                            </h1>
+                            <a class="inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75 mt-8"
+                                href="/download">
+                                <span
+                                    class="block rounded-full bg-white px-8 py-3 text-sm font-medium hover:bg-transparent">
+                                    اكتشف المزيد
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- start of statement اكتشف خريطة اشهر مواقع حفائر المجلس الاعلي للاثار -->
+            </div>
+        </div>
+    </section>
 
-          <div class="my-100 h-0.5 border-t-2 border-yellow-500" style="margin-top:-13%;margin-right:10%; margin-left:10%;""> </div>
-         <div>
-             <p class="text-center text-3xl font-extrabold sm:text-4xl" style="margin-top: 5%;">
-                 <span>القطع <span style="color:#d5a419">المميزة</span>
-                 </span>
-             </p>
-         </div>
+    <div class="my-100 h-0.5 border-t-2 border-yellow-500"
+        style="margin-top:-13%;margin-right:10%; margin-left:10%;""> </div>
+    <div>
+        <p class="text-center text-3xl font-extrabold sm:text-4xl" style="margin-top: 5%;">
+            <span>القطع <span style="color:#d5a419">المميزة</span>
+            </span>
+        </p>
+    </div>
 
 
-         <div class="grid grid-cols-5 gap-4" dir="rtl" style="margin-top: 5%">
-             <div class="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-               <div class="flex items-center justify-center h-56">
-                 <a href="#">
-                   <img class="rounded-t-lg" src="{{ asset('img/panehsy.png') }}" alt="" />
-                 </a>
-               </div>
-               <div class="p-5" dir="rtl">
-                 <a href="#">
-                   <h5 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">تابوت بانحسي</h5>
-                 </a>
-                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">لوريم ابجد هوز اي وات سو </p>
-                 <a class="inline-flex items-center gap-2 rounded border px-4 py-2 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500" href="/download">
-                     <span class="text-sm font-medium"> اعرف المزيد </span>
-                     <svg class="h-5 w-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                     </svg>
-                   </a>
-               </div>
-             </div>
+    <div class="grid grid-cols-5 gap-4" dir="rtl" style="margin-top: 5%">
+        <div
+            class="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex items-center justify-center h-56">
+                <a href="#">
+                    <img class="rounded-t-lg" src="{{ asset('img/panehsy.png') }}" alt="" />
+                </a>
+            </div>
+            <div class="p-5" dir="rtl">
+                <a href="#">
+                    <h5 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">تابوت
+                        بانحسي</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">لوريم ابجد هوز اي وات سو </p>
+                <a class="inline-flex items-center gap-2 rounded border px-4 py-2 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+                    href="/download">
+                    <span class="text-sm font-medium"> اعرف المزيد </span>
+                    <svg class="h-5 w-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
 
-             <div class="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-               <div class="flex items-center justify-center h-56">
-                 <a href="#">
-                   <img class="rounded-t-lg" src="{{ asset('img/tut.png') }}" alt="" />
-                 </a>
-               </div>
-               <div class="p-5" dir="rtl">
-                 <a href="#">
-                   <h5 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">توت عنخ آمون</h5>
-                 </a>
-                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">لوريم ابجد هوز اي وات سو </p>
-                 <a class="inline-flex items-center gap-2 rounded border px-4 py-2 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500" href="/download">
-                     <span class="text-sm font-medium"> اعرف المزيد </span>
-                     <svg class="h-5 w-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                     </svg>
-                   </a>
-               </div>
-             </div>
+        <div
+            class="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex items-center justify-center h-56">
+                <a href="#">
+                    <img class="rounded-t-lg" src="{{ asset('img/tut.png') }}" alt="" />
+                </a>
+            </div>
+            <div class="p-5" dir="rtl">
+                <a href="#">
+                    <h5 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">توت
+                        عنخ آمون</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">لوريم ابجد هوز اي وات سو </p>
+                <a class="inline-flex items-center gap-2 rounded border px-4 py-2 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+                    href="/download">
+                    <span class="text-sm font-medium"> اعرف المزيد </span>
+                    <svg class="h-5 w-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
 
-             <div class="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-               <div class="flex items-center justify-center h-56">
-                 <a href="#">
-                   <img class="rounded-t-lg" src="{{ asset('img/panehsy.png') }}" alt="" />
-                 </a>
-               </div>
-               <div class="p-5" dir="rtl">
-                 <a href="#">
-                   <h5 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">تابوت بانحسي</h5>
-                 </a>
-                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">لوريم ابجد هوز اي وات سو </p>
-                 <a class="inline-flex items-center gap-2 rounded border px-4 py-2 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500" href="/download">
-                     <span class="text-sm font-medium"> اعرف المزيد </span>
-                     <svg class="h-5 w-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                     </svg>
-                   </a>
-               </div>
-             </div>
+        <div
+            class="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex items-center justify-center h-56">
+                <a href="#">
+                    <img class="rounded-t-lg" src="{{ asset('img/panehsy.png') }}" alt="" />
+                </a>
+            </div>
+            <div class="p-5" dir="rtl">
+                <a href="#">
+                    <h5 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">تابوت
+                        بانحسي</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">لوريم ابجد هوز اي وات سو </p>
+                <a class="inline-flex items-center gap-2 rounded border px-4 py-2 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+                    href="/download">
+                    <span class="text-sm font-medium"> اعرف المزيد </span>
+                    <svg class="h-5 w-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
 
-             <div class="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-               <div class="flex items-center justify-center h-56">
-                 <a href="#">
-                   <img class="rounded-t-lg" src="{{ asset('img/panehsy.png') }}" alt="" />
-                 </a>
-               </div>
-               <div class="p-5" dir="rtl">
-                 <a href="#">
-                   <h5 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">تابوت بانحسي</h5>
-                 </a>
-                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">لوريم ابجد هوز اي وات سو </p>
-                 <a class="inline-flex items-center gap-2 rounded border px-4 py-2 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500" href="/download">
-                     <span class="text-sm font-medium"> اعرف المزيد </span>
-                     <svg class="h-5 w-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                     </svg>
-                   </a>
-               </div>
-             </div>
+        <div
+            class="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex items-center justify-center h-56">
+                <a href="#">
+                    <img class="rounded-t-lg" src="{{ asset('img/panehsy.png') }}" alt="" />
+                </a>
+            </div>
+            <div class="p-5" dir="rtl">
+                <a href="#">
+                    <h5 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">تابوت
+                        بانحسي</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">لوريم ابجد هوز اي وات سو </p>
+                <a class="inline-flex items-center gap-2 rounded border px-4 py-2 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+                    href="/download">
+                    <span class="text-sm font-medium"> اعرف المزيد </span>
+                    <svg class="h-5 w-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
 
-             <div class="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-               <div class="flex items-center justify-center h-56">
-                 <a href="#">
-                   <img class="rounded-t-lg" src="{{ asset('img/panehsy.png') }}" alt="" />
-                 </a>
-               </div>
-               <div class="p-5" dir="rtl">
-                 <a href="#">
-                   <h5 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">تابوت بانحسي</h5>
-                 </a>
-                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">لوريم ابجد هوز اي وات سو </p>
-                 <a class="inline-flex items-center gap-2 rounded border px-4 py-2 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500" href="/download">
-                     <span class="text-sm font-medium"> اعرف المزيد </span>
-                     <svg class="h-5 w-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                     </svg>
-                   </a>
-               </div>
-             </div>
-         </div>
-               <div class="my-100 h-0.5 border-t-2 border-yellow-500" style="margin-top:10%; margin-right:10%; margin-left:10%; margin-bottom:5%""> </div>
+        <div
+            class="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex items-center justify-center h-56">
+                <a href="#">
+                    <img class="rounded-t-lg" src="{{ asset('img/panehsy.png') }}" alt="" />
+                </a>
+            </div>
+            <div class="p-5" dir="rtl">
+                <a href="#">
+                    <h5 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">تابوت
+                        بانحسي</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">لوريم ابجد هوز اي وات سو </p>
+                <a class="inline-flex items-center gap-2 rounded border px-4 py-2 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+                    href="/download">
+                    <span class="text-sm font-medium"> اعرف المزيد </span>
+                    <svg class="h-5 w-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="my-100 h-0.5 border-t-2 border-yellow-500"
+        style="margin-top:20%; margin-right:20%; margin-left:20%; margin-bottom:5%"> </div>
+    <figure class="relative" style="margin-left: 30%; margin-top:5%">
+        <img src="{{ asset('img/key.png') }}" alt="key image" style="margin-left: 12%; margin-bottom:-5%">
+        <figcaption class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center mx-auto mb-20" style="width: 100%;">
+                <p class="text-3xl sm:text-4xl font-extrabold items-center mt-5 ml-5 mb-5"
+                    style="margin-top: -6.75rem;
+                margin-left: -34.75rem;
 
-               <figure class="relative" style="margin-left: 30%; margin-top:5%"">
-                 <img src="{{ asset('img/key.png') }}" alt="key image">
-                 <figcaption class="absolute inset-0 flex items-center justify-center">
-                   <div class="text-center"style="margin-right: 40%; margin-bottom:20%" >
-                     <p class="text-3xl sm:text-4xl font-extrabold" >
-                       <span>كن دائم الاطلاع على أخر <br><span style="color:#d5a419">إصدارتنا العلمية</span></span>
-                     </p>
-                     <div class="flex items-center justify-center h-screen">
-                      <div class="slider-container" >
-                        <div x-data="{ activeSlide: 0 }">
-                          <!-- Carousel wrapper -->
-                          <div class="relative h-96 overflow-hidden rounded-lg mx-auto" style="width: 80%">
-                            <!-- Item 1 -->
-                            <div x-show.transition="activeSlide === 0" class="absolute inset-0 w-1/3 inline-block" data-carousel-item>
-                              <!-- Image with rounded corners -->
-                              <img src="{{ asset('img/pic1.png') }}" class="h-96 w-full rounded-lg" alt="...">
-                            </div>
-                            <!-- Item 2 -->
-                            <div x-show.transition="activeSlide === 1" class="absolute inset-0 w-1/3 inline-block" data-carousel-item>
-                              <img src="{{ asset('img/pic1.png') }}" class="h-96 w-full rounded-lg" alt="...">
-                            </div>
-                            <!-- Item 3 -->
-                            <div x-show.transition="activeSlide === 2" class="absolute inset-0 w-1/3 inline-block" data-carousel-item>
-                              <img src="{{ asset('img/pic1.png') }}" class="h-96 w-full rounded-lg" alt="...">
-                            </div>
-                            <!-- Item 4 -->
-                            <div x-show.transition="activeSlide === 3" class="absolute inset-0 w-1/3 inline-block" data-carousel-item>
-                              <img src="{{ asset('img/tut.png') }}" class="h-96 w-full rounded-lg" alt="...">
-                            </div>
-                            <!-- Item 5 -->
-                            <div x-show.transition="activeSlide === 4" class="absolute inset-0 w-1/3 inline-block" data-carousel-item>
-                              <img src="{{ asset('img/pic1.png') }}" class="h-96 w-full rounded-lg" alt="...">
-                            </div>
-                          </div>
-                          <!-- Slider indicators -->
-                          <div class="absolute z-30 flex space-x-2 bottom-0 left-1/2 transform -translate-x-1/2 mb-2">
-                            <button x-on:click="activeSlide = 0" class="h-2 w-2 rounded-full bg-gray-400 focus:outline-none focus:bg-gray-600"></button>
-                            <button x-on:click="activeSlide = 1" class="h-2 w-2 rounded-full bg-gray-400 focus:outline-none focus:bg-gray-600"></button>
-                            <button x-on:click="activeSlide = 2" class="h-2 w-2 rounded-full bg-gray-400 focus:outline-none focus:bg-gray-600"></button>
-                            <button x-on:click="activeSlide = 3" class="h-2 w-2 rounded-full bg-gray-400 focus:outline-none focus:bg-gray-600"></button>
-                            <button x-on:click="activeSlide = 4" class="h-2 w-2 rounded-full bg-gray-400 focus:outline-none focus:bg-gray-600"></button>
-                          </div>
-                          <!-- Previous/next buttons -->
-                          <button x-on:click="activeSlide = (activeSlide - 1 + 5) % 5" class="absolute z-30 left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full px-4 py-2 focus:outline-none">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
-                            </svg>
-                          </button>
-                          <button x-on:click="activeSlide = (activeSlide + 1) % 5" class="absolute z-30 right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full px-4 py-2 focus:outline-none">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
-                            </svg>
-                          </button>
+                margin-bottom: 5.25rem;">
+                    <span>كن دائم الاطلاع على أخر <br><span class="text-yellow-500">إصدارتنا العلمية</span></span>
+                </p>
+                <div class="swiper-container" style="width: 100%;">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide flex justify-center items-center">
+                        <img src="{{ asset('img/pic1.png') }}" class="h-96 w-full object-contain rounded-lg mx-3" alt="...">
+                        <img src="{{ asset('img/pic1.png') }}" class="h-96 w-full object-contain rounded-lg mx-3" alt="...">
+                        <img src="{{ asset('img/pic1.png') }}" class="h-96 w-full object-contain rounded-lg mx-3" alt="...">
+                        <div class="swiper-navigation" style="color: rgba(0, 0, 255, 0.8);">
+
+                        </div>
+                      </div>
+                      <!-- Add more slides with three images each as needed -->
+                      <div class="swiper-slide flex justify-center items-center">
+                        <img src="{{ asset('img/pic1.png') }}" class="h-96 w-full object-contain rounded-lg mx-3" alt="...">
+                        <img src="{{ asset('img/pic1.png') }}" class="h-96 w-full object-contain rounded-lg mx-3" alt="...">
+                        <img src="{{ asset('img/pic1.png') }}" class="h-96 w-full object-contain rounded-lg mx-3" alt="...">
+                        <div class="swiper-navigation" style="color: rgba(0, 0, 255, 0.8);">
                         </div>
                       </div>
                     </div>
-                 </figcaption>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination mb-0 ml-0 mt-0 mr-0"></div>
+                  </div>
+                    <!-- Add Navigation -->
+                    <div class="swiper-navigation " style="color: rgba(0, 0, 255, 0.8);">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
+                </div>
+            </div>
+        </figcaption>
+    </figure>
 
-               </figure>
- <!--The sixth slider -->
-               <div class="my-100 h-0.5 border-t-2 border-yellow-500" style="margin-top:10%; margin-right:10%; margin-left:10%; margin-bottom:5%""> </div>
+    <!--The sixth slider -->
+    <div class="my-100 h-0.5 border-t-2 border-yellow-500"
+        style="margin-top:10%; margin-right:10%; margin-left:10%; margin-bottom:5%""> </div>
 
-               <section class="bg-white">
-                 <div class="container px-6 py-10 mx-auto" dir="rtl">
-
-
-                     <div class="mt-8 lg:-mx-6 lg:flex lg:items-center" style="margin-right: 10%; margin-top:-5%">
-                         <img src="{{ asset('img/magls.png') }}">
-
-                         <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
+    <section class="bg-white">
+        <div class="container px-6 py-10 mx-auto" dir="rtl">
 
 
-                             <a href="#" class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-white">
-                                 All the features you want to know
-                             </a>
+            <div class="mt-8 lg:-mx-6 lg:flex lg:items-center" style="margin-right: 10%; margin-top:-5%">
+                <img src="{{ asset('img/magls.png') }}">
 
-                             <div class="text-center"style="margin-left: 10%; margin-top:10%">
-                               <p class="text-3xl sm:text-4xl font-extrabold" >
-                                 <span>هل تريد معرفة المزيد؟<br>لا تتردد في
-                                   <span style="color:#d5a419">التواصل</span>
-                                   معنا </span>
+                <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
 
-                               </p>
-                               <a class="inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75 mt-8" href="/download">
-                                 <span class="block rounded-full bg-white px-8 py-3 text-sm font-medium hover:bg-transparent">
-                                   تواصل معنا
-                                 </span>
-                               </a>
-                             </div>
 
-                         </div>
-                     </div>
-                 </div>
-             </section>
-              <!-- The footer -->
-             <div class="my-100 h-0.5 border-t-2 border-black" style="margin-top:10%; margin-right:10%; margin-left:10%; margin-bottom:5%""> </div>
+                    <a href="#"
+                        class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-white">
+                        All the features you want to know
+                    </a>
 
-             <section style="margin-top:-5%">
-               <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-                 <div class="grid row-gap-10 mb-8 lg:grid-cols-6">
-                   <div class="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4" style="margin-left:20%; " >
-                     <!--community column in the footer -->
+                    <div class="text-center"style="margin-left: 10%; margin-top:10%">
+                        <p class="text-3xl sm:text-4xl font-extrabold">
+                            <span>هل تريد معرفة المزيد؟<br>لا تتردد في
+                                <span style="color:#d5a419">التواصل</span>
+                                معنا </span>
+
+                        </p>
+                        <a class="inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75 mt-8"
+                            href="/download">
+                            <span
+                                class="block rounded-full bg-white px-8 py-3 text-sm font-medium hover:bg-transparent">
+                                تواصل معنا
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- The footer -->
+    <div class="my-100 h-0.5 border-t-2 border-black"
+        style="margin-top:10%; margin-right:10%; margin-left:10%; margin-bottom:5%""> </div>
+
+    <section style="margin-top:-5%">
+        <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+            <div class="grid row-gap-10 mb-8 lg:grid-cols-6">
+                <div class="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4" style="margin-left:20%; ">
+                    <!--community column in the footer -->
                     <div>
-                       <p class="font-extrabold tracking-wide text-black">Community</p>
-                       <ul class="mt-2 space-y-2">
-                         <li>
-                           <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">Featured artists</a>
-                         </li>
-                         <li>
-                           <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">The portal</a>
-                         </li>
-                         <li>
-                           <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">Live events</a>
-                         </li>
-                       </ul>
-                     </div>
-                      <!--company column in the footer -->
-                     <div>
-                       <p class="font-extrabold tracking-wide text-black">Company</p>
-                       <ul class="mt-2 space-y-2">
-                         <li>
-                           <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">About us</a>
-                         </li>
-                         <li>
-                           <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">Conyacy us</a>
-                         </li>
-                         <li>
-                           <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">History</a>
-                         </li>
+                        <p class="font-extrabold tracking-wide text-black">Community</p>
+                        <ul class="mt-2 space-y-2">
+                            <li>
+                                <a href="/"
+                                    class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">Featured
+                                    artists</a>
+                            </li>
+                            <li>
+                                <a href="/"
+                                    class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">The
+                                    portal</a>
+                            </li>
+                            <li>
+                                <a href="/"
+                                    class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">Live
+                                    events</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--company column in the footer -->
+                    <div>
+                        <p class="font-extrabold tracking-wide text-black">Company</p>
+                        <ul class="mt-2 space-y-2">
+                            <li>
+                                <a href="/"
+                                    class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">About
+                                    us</a>
+                            </li>
+                            <li>
+                                <a href="/"
+                                    class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">Conyacy
+                                    us</a>
+                            </li>
+                            <li>
+                                <a href="/"
+                                    class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">History</a>
+                            </li>
 
-                       </ul>
-                     </div>
+                        </ul>
+                    </div>
 
-                   </div>
-                    <!--The sentence of حفائر المجلس الاعلى للاثار in the footer -->
-                   <div class="text-right">
-                     <div class="text-3xl font-extrabold sm:text-4xl" style="margin-right:5%">
-                       <p>
-                         <span><span style="color:#d5a419">حفائر </span><br> المجلس <br>الأعلى للآثار  </span>
-                       </p>
-                     </div>
-                   </div>
-                   </div>
-                 </div>
-                  <!--Copy Right -->
-                 <div class="flex flex-col justify-between pt-5 pb-10 border-t border-gray-800 sm:flex-row" style="margin-right:13%; margin-left:13%">
-                   <p class="text-sm  text-gray-500">
-                     ©جميع الحقوق محفوظة 2023
-                   </p>
-                    <!--Icons in the footer -->
-                   <div class="flex items-center mt-4 space-x-4 sm:mt-0">
-                     <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-teal-accent-400">
-                       <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                         <path
-                           d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
-                         ></path>
-                       </svg>
-                     </a>
-                     <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-teal-accent-400">
-                       <svg viewBox="0 0 30 30" fill="currentColor" class="h-6">
-                         <circle cx="15" cy="15" r="4"></circle>
-                         <path
-                           d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z"
-                         ></path>
-                       </svg>
-                     </a>
-                     <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-teal-accent-400">
-                       <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                         <path
-                           d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
-                         ></path>
-                       </svg>
-                     </a>
-                   </div>
-                 </div>
-               </div>
+                </div>
+                <!--The sentence of حفائر المجلس الاعلى للاثار in the footer -->
+                <div class="text-right">
+                    <div class="text-3xl font-extrabold sm:text-4xl" style="margin-right:5%">
+                        <p>
+                            <span><span style="color:#d5a419">حفائر </span><br> المجلس <br>الأعلى للآثار </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Copy Right -->
+        <div class="flex flex-col justify-between pt-5 pb-10 border-t border-gray-800 sm:flex-row"
+            style="margin-right:13%; margin-left:13%">
+            <p class="text-sm  text-gray-500">
+                ©جميع الحقوق محفوظة 2023
+            </p>
+            <!--Icons in the footer -->
+            <div class="flex items-center mt-4 space-x-4 sm:mt-0">
+                <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-teal-accent-400">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                        <path
+                            d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-teal-accent-400">
+                    <svg viewBox="0 0 30 30" fill="currentColor" class="h-6">
+                        <circle cx="15" cy="15" r="4"></circle>
+                        <path
+                            d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-teal-accent-400">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                        <path
+                            d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        </div>
 
-<!-- Start of Javascript Code -->
-         <script>
-             function scrollToSlider(event) {
-                 event.preventDefault(); // Prevent the default link behavior
-                 const slider = document.getElementById('slider');
-                 slider.scrollIntoView({
-                     behavior: 'smooth'
-                 });
-             }
-         </script>
-         <script>
-             document.addEventListener('keydown', (event) => {
-                 const carousel = document.getElementById('slider');
-                 const xData = carousel.__x.$data;
+        <!-- Start of Javascript Code -->
+        <script>
+            function scrollToSlider(event) {
+                event.preventDefault(); // Prevent the default link behavior
+                const slider = document.getElementById('default-carousel');
+                slider.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+        <script>
+            document.addEventListener('keydown', (event) => {
+                const carousel = document.getElementById('default-carousel');
+                const xData = carousel.__x.$data;
 
-                 switch (event.key) {
-                     case 'ArrowLeft':
-                         xData.activeSlide = xData.activeSlide === 0 ? 4 : xData.activeSlide - 1;
-                         break;
-                     case 'ArrowRight':
-                         xData.activeSlide = xData.activeSlide === 4 ? 0 : xData.activeSlide + 1;
-                         break;
-                 }
-             });
-         </script>
-         <script>
-          function scrollToSlider(event) {
-              event.preventDefault(); // Prevent the default link behavior
-              const slider = document.getElementById('default-carousel');
-              slider.scrollIntoView({
-                  behavior: 'smooth'
-              });
-          }
-      </script>
-      <script>
-          document.addEventListener('keydown', (event) => {
-              const carousel = document.getElementById('default-carousel');
-              const xData = carousel.__x.$data;
+                switch (event.key) {
+                    case 'ArrowLeft':
+                        xData.activeSlide = xData.activeSlide === 0 ? 4 : xData.activeSlide - 1;
+                        break;
+                    case 'ArrowRight':
+                        xData.activeSlide = xData.activeSlide === 4 ? 0 : xData.activeSlide + 1;
+                        break;
+                }
+            });
+            document.addEventListener('DOMContentLoaded', () => {
+  new Swiper('.swiper-container', {
+    slidesPerView: 1, // Change this value to 3
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+});
 
-              switch (event.key) {
-                  case 'ArrowLeft':
-                      xData.activeSlide = xData.activeSlide === 0 ? 4 : xData.activeSlide - 1;
-                      break;
-                  case 'ArrowRight':
-                      xData.activeSlide = xData.activeSlide === 4 ? 0 : xData.activeSlide + 1;
-                      break;
-              }
-          });
-      </script>
-<!-- End of Javascript Code -->
+        </script>
+        <!-- End of Javascript Code -->
 </body>
 
 </html>
+
+
+
 
 
